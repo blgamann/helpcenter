@@ -24,6 +24,10 @@ defmodule Helpcenter.KnowledgeBase.Category do
       description "Relationship with the articles."
       destination_attribute :category_id
     end
+
+    aggregates do
+      count :article_count, :articles
+    end
   end
 
   actions do
