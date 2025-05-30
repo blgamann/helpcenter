@@ -47,7 +47,7 @@ defmodule Helpcenter.KnowledgeBase.Article do
       :views_count,
       :published,
       :category_id # added for category relationship
-  ]
+    ]
     defaults [:create, :read, :update, :destroy]
 
     create :create_with_category do

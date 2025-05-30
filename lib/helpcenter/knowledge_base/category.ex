@@ -14,12 +14,10 @@ defmodule Helpcenter.KnowledgeBase.Category do
 
   pub_sub do
     module HelpcenterWeb.Endpoint
-
     prefix "categories"
-
-    publish_all :update, [[:id, nil]]
-    publish_all :create, [[:id, nil]]
-    publish_all :destroy, [[:id, nil]]
+    publish_all :update, [[:id, nil]] # categories:update
+    publish_all :create, [[:id, nil]] # categories:create
+    publish_all :destroy, [[:id, nil]] # categories:destroy
   end
 
   attributes do

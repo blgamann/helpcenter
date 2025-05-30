@@ -70,7 +70,6 @@ defmodule HelpcenterWeb.CategoriesLive do
         |> noreply()
 
       {:error, _error} ->
-
         socket
         |> put_flash(:error, "Unable to delete category")
         |> noreply()
